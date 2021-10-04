@@ -1,5 +1,6 @@
 import { useCallback, useState } from 'react';
 import { getVersions } from '@sample/version';
+import styled from 'styled-components';
 
 export function Counter({ initialCount = 0 }: { initialCount?: number }) {
   const [count, setCount] = useState(initialCount);
@@ -12,6 +13,7 @@ export function Counter({ initialCount = 0 }: { initialCount?: number }) {
 
   return (
     <p>
+      <Title>Hello Styled Components!</Title>
       <button
         type="button"
         onClick={() => {
@@ -28,3 +30,9 @@ export function Counter({ initialCount = 0 }: { initialCount?: number }) {
     </p>
   );
 }
+
+const Title = styled.h1`
+  font-size: 1.5em;
+  text-align: center;
+  color: palevioletred;
+`;
