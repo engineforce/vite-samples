@@ -1,0 +1,23 @@
+{
+  "name": "@sample/counter-react",
+  "version": "0.0.1",
+  "main": "index.ts",
+  "scripts": {
+    "lint": "tsc --noEmit"
+  },
+  "dependencies": {
+    "axios": "^0.22.0",
+    "lodash": "^4.17.21",
+    "p-limit": "^4.0.0"
+  },
+  "peerDependencies": {
+    "react": "^17.0.0",
+    "react-dom": "^17.0.0"
+  },
+  "devDependencies": {
+    "@types/lodash": "^4.14.175",
+    "@types/react": "^17.0.0",
+    "@types/react-dom": "^17.0.0",
+    "typescript": "^4.3.2"
+  }
+}

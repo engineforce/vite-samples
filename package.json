@@ -1,7 +1,13 @@
 {
-  "name": "root",
+  "name": "vite-samples",
   "private": true,
+  "scripts": {
+    "install": "lerna clean --no-private --yes && npm run bootstrap",
+    "clean": "lerna run clean --stream && lerna clean --no-private --yes && rm -rf node_modules/@sample",
+    "bootstrap": "lerna bootstrap --no-private && monorepo-cli package hoist-local"
+  },
   "devDependencies": {
+    "monorepo-cli": "file:./packages/monorepo-cli",
     "lerna": "^4.0.0"
   }
 }
