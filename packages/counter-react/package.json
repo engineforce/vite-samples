@@ -1,14 +1,12 @@
 {
   "name": "@sample/counter-react",
   "version": "0.0.1",
-  "main": "index.ts",
+  "main": "src/index.ts",
   "scripts": {
     "lint": "tsc --noEmit"
   },
   "dependencies": {
-    "axios": "^0.22.0",
-    "lodash": "^4.17.21",
-    "p-limit": "^4.0.0"
+    "@sample/version": "*"
   },
   "peerDependencies": {
     "react": "^17.0.0",

@@ -12,7 +12,7 @@ module.exports = {
     {
       plugin: cracoBabelLoader,
       options: {
-        includes: [resolvePackage('../../packages/counter-react')],
+        includes: [resolvePackage('../../packages')],
       },
     },
   ],
